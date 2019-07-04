@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SiblingInteractionService } from 'src/app/sibling-interaction.service';
 
 @Component({
   selector: 'app-task5-parent',
@@ -8,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 export class Task5ParentComponent implements OnInit {
 
   public gChildMessage = '';
-  constructor() { }
+  public grandMessage: any;
+  constructor(private messageService: SiblingInteractionService) { }
 
   ngOnInit() {
+    this.messageService.siblingMessage.subscribe(data =>
+        this.grandMessage = data
+      );
   }
 
 }

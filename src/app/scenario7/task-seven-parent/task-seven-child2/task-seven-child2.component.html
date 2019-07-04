@@ -1,0 +1,7 @@
+
+<div>
+    <h4>Component Child B</h4>
+    <p>I am sending some message to my sibling without my parent's help!!</p>
+    <label for="inputBox">Enter Some Text Here: </label>
+    <input type="text" name="inputBox" [(ngModel)]="myMessage" (keyup)="sendToSibling($event)">
+</div>

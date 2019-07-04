@@ -3,4 +3,8 @@
     <h5>I am writing data to my grand-parent!!!</h5>
     <label for="inputBox">Enter Some Text Here: </label>
     <input [(ngModel)]="gChildMessage" (keyup)="typeToChild($event)" type="text" name="inputBox">
+
+    <p>Let's not take help of my parent to send message to my grand-parent here!!</p>
+    <label for="serviceInput">Enter Some Text Here: </label>
+    <input type="text" name="serviceInput" #grandMessage (keyup)="sendToGrand(grandMessage.value)">
 </div>
