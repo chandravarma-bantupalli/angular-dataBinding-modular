@@ -1,0 +1,6 @@
+
+<div>
+    <h4>This is Child Component in Task-4</h4>
+    <label for="inputBox">Enter Some Text Here: </label>
+    <input [(ngModel)]="childMessage" type="text" name="inputBox" (keyup)="typeToParent($event)">
+</div>
