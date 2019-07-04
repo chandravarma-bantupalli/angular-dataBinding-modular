@@ -1,0 +1,11 @@
+
+<div class="main">
+    <h3>Data Binding Task-6</h3>
+    <p>Sibling Interaction using Decorators</p>
+    <h5>I am getting this data from my child A and sending it to child B</h5>
+    <h6> {{child1Message}} </h6>
+    <div class="components">
+        <app-task-six-child1 (child1Event)="child1Message=$event"></app-task-six-child1>
+        <app-task-six-child2 [child1Message]="child1Message"></app-task-six-child2>
+    </div>
+</div>
