@@ -7,4 +7,4 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ]
 })
-export class ScenarioTwoModule { }
+export class Scenario3Module { }
