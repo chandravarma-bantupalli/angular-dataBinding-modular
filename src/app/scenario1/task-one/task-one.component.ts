@@ -13,7 +13,7 @@ export class TaskOneComponent implements OnInit {
   ngOnInit() {
   }
 
-  logToConsole(){
+  logToConsole() {
     console.log(this.consoleMessage);
   }
 

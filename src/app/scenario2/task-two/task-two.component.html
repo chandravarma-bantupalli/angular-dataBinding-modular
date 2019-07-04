@@ -5,7 +5,8 @@
     <p>Display the message in the view as user inserts the text</p>
 
     <section>
-        <input [(ngModel)]="userText" type="text">
+        <label for="inputBox">Enter Some Text Here: </label>
+        <input [(ngModel)]="userText" type="text" name="inputBox">
         <h4> {{userText}} </h4>
     </section>
 </div>

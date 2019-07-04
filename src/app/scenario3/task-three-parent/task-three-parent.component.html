@@ -1,0 +1,9 @@
+
+<div>
+    <h3>Data Binding Task-3</h3>
+    <h5>This is in Scenario3 Module</h5>
+    <p>Display the message entered in parent component into the child component</p>
+    <label for="inputBox">Enter Some Text Here: </label>
+    <input [(ngModel)]="parentMessage" type="text" name="inputBox">
+    <app-task-three-child [parentData]='parentMessage'></app-task-three-child>
+</div>
