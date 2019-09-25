@@ -4,7 +4,7 @@
     <label for="inputBox">Enter Some Text Here: </label>
     <input [(ngModel)]="gChildMessage" (keyup)="typeToChild($event)" type="text" name="inputBox">
 
-    <p>Let's not take help of my parent to send message to my grand-parent here!!</p>
+    <h5>Let's not take help of my parent to send message to my grand-parent here!!</h5>
     <label for="serviceInput">Enter Some Text Here: </label>
     <input type="text" name="serviceInput" #grandMessage (keyup)="sendToGrand(grandMessage.value)">
 </div>
